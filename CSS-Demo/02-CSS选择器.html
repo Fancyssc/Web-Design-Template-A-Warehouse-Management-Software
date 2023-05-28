@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--
+        选择器的优先级取决于选择的范围
+        范围越小，优先级越高
+    -->
+    <style>
+        /*元素选择器*/
+        div{
+            color: red;
+        }
+        /*ID选择器*/
+        #name{
+            color: blue;
+        }
+        /*类选择器*/
+        .cls{
+            color: pink;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div>div1</div>
+    <div id="name">div2</div>
+    <div class = "cls">div3</div>
+
+   <span class = "cls">span</span>
+</body>
+</html>

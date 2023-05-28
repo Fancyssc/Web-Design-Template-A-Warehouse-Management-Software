@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--
+        <form> 定义表单 action:规定提交表单时向何处发送数据  method: 规定表单发送方式 (默认get/post)
+            表单项数据要想被提交，则必须指定其name属性
+            ** get:请求参数会拼接在URL后面,但是URL的长度有限制，因此请求参数不能过长
+            ** post:请求参数会在http请求协议的请求体中，请求参数无限制
+        <input>定义文本输入框
+     -->
+
+    <form action="#">  <!-- #代表向当前页发送数据 -->
+        <input type="text" name="username"> <!-- 必须指定name属性-->
+        <input type="submit">
+    </form>
+</body>
+</html>

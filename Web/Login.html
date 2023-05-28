@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link href="css/Login.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 背景 -->
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div class="Main"> </div>
+
+    <!--左侧标语-->
+    <div id="slogan">Manage With Heart</div>
+
+    <div id="line"></div>
+    <div id="statement">
+        a warehouse management system based on database<br>
+        professional client-service for personal warehouse users<br>
+        Together for a share future with us!
+    </div>
+
+    <!--注册主体 -->
+    <form>
+        <!--登录标题-->
+        <div id="title">Login</div>
+        <!--username-->
+        <span id="txt1">username</span>
+        <input type="text"  id="username" > <br>
+        <span id="username_err" style="display: none" >The length should between 6 and 12.</span>
+        <br>
+        <!--password-->
+        <span id="txt2">password</span>
+        <input type="password" id="password" > <br>
+        <span id="password_err"  style="display:none" >The length should between 6 and 12.</span>
+        <br>
+        <!--登录按钮-->
+        <input type="button" value="Log in"  id="Login" class="loginButton">
+        <span id="wrong"  style="display:none" >wrong password or username.</span>
+        <input type="button" value="Register"  id="Register" class="loginButton">
+    </form>
+    <script src="jquery.js"></script>
+    <script src="../../UserLogin/src/Login.js"></script>
+
+</body>
+</html>

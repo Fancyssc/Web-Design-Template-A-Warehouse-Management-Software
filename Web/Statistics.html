@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Statistics</title>
+    <link href="css/Statistics.css" rel="stylesheet">
+    <script src="../../UserLogin/src/Login.js"></script>
+</head>
+<body>
+<!--背景-->
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+<div class="Main"> </div>
+
+
+<!--条件勾选框-->
+<div class="Main"> </div>
+<!--勾选框框体-->
+<form>
+    <!--标题-->
+    <span id="title">Data Analysis System</span>
+    <!--时间-->
+    <span id="txt1">time</span>
+    <input type="text"  id="time1" > <br>
+    <input type="text"  id="time2" > <br>
+    <span id="line">-</span>
+    <br>
+    <!--类别-->
+    <span id = "txt2">type</span>
+    <input type="text" id="type"> <br>
+    <br>
+    <!--位置-->
+    <span id="txt3">location</span>
+    <input type="text" id="location"> <br>
+    <br>
+    <span id="txt4">order by:</span>
+    <input type="radio" name="order" value="goodsID" id="ID" >
+    <span id="txt_ID">ID</span>
+    <input type="radio" name="order" value="goodsType" id="Type2">
+    <span id="txt_Type">Type</span>
+    <input type="radio" name="order" value="date" id="Date">
+    <span id="txt_Date">Date</span>
+    <!--注册最终按钮-->
+    <input type="button" value="Check"  id="Check">
+</form>
+
+<!--翻页按钮-->
+<ul class="pagination">
+
+    <li><a  id="li1" href="Statistics2.html">«</a></li>
+
+    <li><a class="active" href="#">1</a></li>
+
+    <li><a  id="li2" href="Statistics2.html">2</a></li>
+
+    <li><a  id="li3" href="Statistics2.html">»</a></li>
+
+</ul>
+
+<!--查询结果显示-->
+<div class="ResultBox">
+    <table id="goodsTable">
+        <tr>
+            <th>Goods</th>
+            <th>Type</th>
+            <th>WareHouse</th>
+            <th>Location</th>
+            <th>Date</th>
+        </tr>
+        <tr>
+            <td id="1_1"></td>
+            <td id="1_2"></td>
+            <td id="1_3"></td>
+            <td id="1_4"></td>
+            <td id="1_5"></td>
+        </tr>
+        <tr>
+            <td id="2_1"></td>
+            <td id="2_2"></td>
+            <td id="2_3"></td>
+            <td id="2_4"></td>
+            <td id="2_5"></td>
+        </tr>
+        <tr>
+            <td id="3_1"></td>
+            <td id="3_2"></td>
+            <td id="3_3"></td>
+            <td id="3_4"></td>
+            <td id="3_5"></td>
+        </tr>
+        <tr>
+            <td id="4_1"></td>
+            <td id="4_2"></td>
+            <td id="4_3"></td>
+            <td id="4_4"></td>
+            <td id="4_5"></td>
+        </tr>
+        <tr>
+            <td id="5_1"></td>
+            <td id="5_2"></td>
+            <td id="5_3"></td>
+            <td id="5_4"></td>
+            <td id="5_5"></td>
+        </tr>
+        <tr>
+            <td id="6_1"></td>
+            <td id="6_2"></td>
+            <td id="6_3"></td>
+            <td id="6_4"></td>
+            <td id="6_5"></td>
+        </tr>
+        <tr>
+            <td id="7_1"></td>
+            <td id="7_2"></td>
+            <td id="7_3"></td>
+            <td id="7_4"></td>
+            <td id="7_5"></td>
+        </tr>
+        <tr>
+            <td id="8_1"></td>
+            <td id="8_2"></td>
+            <td id="8_3"></td>
+            <td id="8_4"></td>
+            <td id="8_5"></td>
+        </tr>
+        <tr>
+            <td id="9_1"></td>
+            <td id="9_2"></td>
+            <td id="9_3"></td>
+            <td id="9_4"></td>
+            <td id="9_5"></td>
+        </tr>
+        <tr>
+            <td id="10_1"></td>
+            <td id="10_2"></td>
+            <td id="10_3"></td>
+            <td id="10_4"></td>
+            <td id="10_5"></td>
+        </tr>
+    </table>
+    <div id="total"></div>
+</div>
+
+
+<script src="jquery.js"></script>
+<script src="JS/Statistics.js"></script>
+
+</body>
+</html>

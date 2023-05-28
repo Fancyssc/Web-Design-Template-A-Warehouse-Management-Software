@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="#" method="post">
+
+        <!--
+            <input>创建基本的一种表单项
+            hidden --隐藏文本    text--文本输入   password--密码  radio--单选框     checkbox--复选框     file--文件提交按钮
+            rset--重置按钮，清空表单所有内容   button--普通按钮，配合JavaScript使用
+
+        -->
+
+        <input type="hidden" name="id" value="123">
+        <label for="username">Username:</label><!-- 定义label，之后定义并且引用id，可以将链接label和对应的属性，使得光标可选中范围变大-->
+        <input type="text" name="username" id="username"><!--要想被提交必须有name-->
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password">
+        <br>
+        <!--
+        *单选框选型互斥用同一个name实现
+        * value控制的是提交的值，如果不赋予不同的value值，得到的提交值是一样的！
+        -->
+        <input type="radio" name="gender" value="1" id="m"> <label for="m">男</label>
+        <input type="radio" name="gender" value="2" id="f"><label for="f">女</label>
+        <br>
+        爱好：
+        <input type="checkbox" name="hobby" value="1"> 运动
+        <input type="checkbox" name="hobby" value="2"> 电影
+        <input type="checkbox" name="hobby" value="3"> 美食
+        <br>
+
+        头像:
+        <input type="file">
+        <br>
+        <input type="reset" value ="reset">
+        <input type="button" value = "test button">
+
+        <!--
+            <select>创建一个下拉列表
+         -->
+        <select>
+            <option>上海</option>
+            <option>北京</option>
+            <option>广州</option>
+        </select>
+        <!--
+            <textarea>创建一个文本域
+            cols rows控制行数列数
+        -->
+        个人描述
+        <textarea cols="20" rows="5" name="personal statement">
+        </textarea>
+        <input type="submit" value="Sign in"><!-- 给按钮赋值用value参数-->
+    </form>
+</body>
+</html>

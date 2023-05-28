@@ -1,0 +1,345 @@
+html {
+    height:100%;
+}
+body {
+    z-index: 2;
+    margin:0;
+}
+
+.bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, rgba(255, 255, 255, 0.88) 50%, #7bc7f5 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+
+}
+
+.bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+}
+
+.bg3 {
+    animation-duration:5s;
+}
+
+h1 {
+    font-family:monospace;
+}
+
+@keyframes slide {
+    0% {
+        transform:translateX(-25%);
+    }
+    100% {
+        transform:translateX(25%);
+    }
+}
+@keyframes form_move {
+    from {
+        left: 0;
+    }
+    to {
+    }
+}
+@keyframes form_move_right {
+    from{right: 0;}
+    to{}
+}
+.Main{
+    animation-name: form_move;
+    animation-duration: 2s;
+    background: #7e7ef1;
+    position: fixed;
+    bottom: 27%;
+    left: 5%;
+    width: 500px;
+    height: 450px;
+    border-radius: 25px;
+}
+
+#title{
+    animation-name: form_move;
+    animation-duration: 2s;
+    position:fixed;
+    left: 8%;
+    top: 24%;
+    color: white;
+    font-size: 10mm;
+    font-family:Segoe UI Black ;
+}
+#txt1{
+    animation-name: form_move;
+    animation-duration: 2s;
+    position: fixed;
+    top: 32%;
+    left: 8%;
+    font-size: 7mm;
+    font-family: Berlin Sans FB;
+    color: white;
+}
+#txt2{
+    animation-name: form_move;
+    animation-duration: 2s;
+    position: fixed;
+    top: 40%;
+    left: 8%;
+    font-size: 7mm;
+    font-family: Berlin Sans FB;
+    color: white;
+}
+#txt3{
+    animation-name: form_move;
+    animation-duration: 2s;
+    position: fixed;
+    top: 48%;
+    left: 8%;
+    font-size: 7mm;
+    font-family: Berlin Sans FB;
+    color: white;
+}
+#time1{
+    animation-name: form_move;
+    animation-duration: 2s;
+    position: fixed;
+    top: 35.5%;
+    left: 8%;
+    width: 175px;
+    height: 25px;
+    font-family: Berlin Sans FB;
+    font-size: 6mm;
+    color: white;
+    border-left: hidden;
+    border-right: hidden;
+    border-top: hidden;
+    border-bottom: 3px solid white;
+    background: #7e7ef1;
+    outline:none
+}
+#time2{
+    animation-name: form_move;
+    animation-duration: 2s;
+    position: fixed;
+    top: 35.5%;
+    left:21.5%;
+    width: 175px;
+    height: 25px;
+    font-family: Berlin Sans FB;
+    font-size: 6mm;
+    color: white;
+    border-left: hidden;
+    border-right: hidden;
+    border-top: hidden;
+    border-bottom: 3px solid white;
+    background: #7e7ef1;
+    outline:none
+}
+#line{
+    animation-name: form_move;
+    animation-duration: 2s;
+    position: fixed;
+    top: 35%;
+    left: 19.5%;
+    font-size: 10mm;
+    font-family: Berlin Sans FB;
+    color: white;
+}
+#type{
+    animation-name: form_move;
+    animation-duration: 2s;
+    position: fixed;
+    top: 43.5%;
+    left: 8%;
+    width: 405px;
+    height: 25px;
+    font-family: Berlin Sans FB;
+    font-size: 6mm;
+    color: white;
+    border-left: hidden;
+    border-right: hidden;
+    border-top: hidden;
+    border-bottom: 3px solid white;
+    background: #7e7ef1;
+    outline:none
+}
+#location{
+    animation-name: form_move;
+    animation-duration: 2s;
+    position: fixed;
+    top: 51.5%;
+    left: 8%;
+    width: 405px;
+    height: 25px;
+    font-family: Berlin Sans FB;
+    font-size: 6mm;
+    color: white;
+    border-left: hidden;
+    border-right: hidden;
+    border-top: hidden;
+    border-bottom: 3px solid white;
+    background: #7e7ef1;
+    outline:none
+}
+#txt4{
+    animation-name: form_move;
+    animation-duration: 2s;
+    position: fixed;
+    top: 57%;
+    left: 8%;
+    font-size: 7mm;
+    font-family: Berlin Sans FB;
+    color: white;
+}
+#ID{
+    animation-name: form_move;
+    animation-duration: 2s;
+    position: fixed;
+    width: 30px;
+    top: 58%;
+    left: 16%;
+    font-size: 7mm;
+    font-family: Berlin Sans FB;
+    color: white;
+}
+#txt_ID{
+    animation-name: form_move;
+    animation-duration: 2s;
+    position: fixed;
+    top: 57.5%;
+    left: 18%;
+    font-size: 6mm;
+    font-family: Berlin Sans FB;
+    color: white;
+}
+#Type2{
+    animation-name: form_move;
+    animation-duration: 2s;
+    position: fixed;
+    top: 58%;
+    left: 20.4%;
+    font-size: 6mm;
+    font-family: Berlin Sans FB;
+    color: white;
+}
+#txt_Type{
+    animation-name: form_move;
+    animation-duration: 2s;
+    position: fixed;
+    top: 57.5%;
+    left: 21.6%;
+    font-size: 6mm;
+    font-family: Berlin Sans FB;
+    color: white;
+}
+#Date{
+    animation-name: form_move;
+    animation-duration: 2s;
+    position: fixed;
+    top: 58%;
+    left: 25.6%;
+    font-size: 6mm;
+    font-family: Berlin Sans FB;
+    color: white;
+}
+#txt_Date{
+    animation-name: form_move;
+    animation-duration: 2s;
+    position: fixed;
+    top: 57.5%;
+    left: 27%;
+    font-size: 6mm;
+    font-family: Berlin Sans FB;
+    color: white;
+}
+#Check{
+    animation-name: form_move;
+    animation-duration: 2s;
+    color: white;
+    width: 250px;
+    height: 40px;
+    position: fixed;
+    top: 64%;
+    left: 12%;
+    background: #7e7ef1;
+    border-radius: 25px;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    font-size: 8mm;
+    font-family: Berlin Sans FB;
+    transition: all 0.3s;
+}
+#Check:hover{
+    transform: scale(1.10);
+}
+
+/*分页按钮*/
+ul.pagination {
+    animation-name: form_move_right;
+    animation-duration: 2s;
+    position: fixed;
+    left: 62%;
+    top: 88%;
+    display: inline-block;
+     padding: 0;
+     margin: 0;
+}
+ul.pagination li {display: inline;}
+ul.pagination li a {
+    color: #7171dc;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+ul.pagination li a.active {
+    background-color: #7171dc;
+    color: white;
+}
+ul.pagination li a:hover:not(.active) {background-color: #ddd;}
+ul.pagination li a {
+    border-radius: 5px;
+}
+ul.pagination li a.active {
+    border-radius: 5px;
+}
+/*结果显示*/
+.ResultBox{
+    animation-name: form_move_right;
+    animation-duration: 2s;
+    background: #7e7ef1;
+    position: fixed;
+    bottom: 18%;
+    right: 10%;
+    width: 800px;
+    height: 600px;
+    border-radius: 25px;
+}
+#goodsTable{
+    position:relative;
+    left: 5%;
+    top: 5%;
+    width: 90%;
+    color: white;
+}
+td {
+    top:8%;
+    padding: 10px;
+    text-align: center;
+    font-size: 5mm;
+}
+th{
+    font-size: 8mm;
+}
+#total{
+    position: fixed;
+    font-size: 6mm;
+    font-family: Arial;
+    left: 47%;
+    top:76%;
+    color:white;
+}

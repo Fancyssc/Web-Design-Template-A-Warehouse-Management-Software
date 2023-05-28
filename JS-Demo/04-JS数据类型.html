@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <script>
+      /*
+        JS中数据类型分为 原始类型 和 引用类型
+        JS中有五种原始类型：number string boolean null undefined
+       */
+      var age = 20;
+      var price = 99.9;
+      var name = "你好";
+      var char = "A";
+      document.write(typeof age+"<br/>");
+      document.write(typeof char+"<br/>");
+      document.write(typeof price+"<br/>");
+      document.write(typeof name+"<br/>");
+      /*
+        JS换行需要使用“\n”,特别的"\n"在documen.write()只起到空格作用
+        document.write()中应采用<br/>
+       */
+
+      var a = null;
+      document.write(typeof a +"<br/>") //对于null的typeof输出是object
+
+      var b ;
+      document.write(typeof b);//为赋值对象系统默认值是undefined
+    </script>
+</body>
+</html>

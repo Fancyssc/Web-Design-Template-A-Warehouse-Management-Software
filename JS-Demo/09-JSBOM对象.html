@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        /**
+         * Window对象: 用window.获取
+         * 属性 history Navigator Screen location
+         * 方法 alert() confirm() setInterval() setTimeout()
+         */
+
+        //弹框方法 传入参数是一个字符串
+        window.alert("test");//弹出警告框
+        var flag = window.confirm("test");//弹出确认框 confirm有boolean返回值 可以接收返回值来完成删除逻辑
+        if(flag){
+            //delete
+        }
+        function add(){
+            alert("test");
+        }
+        //定时器方法 传入参数是一个函数和一个时间参数
+        window.setTimeout(add,5);//在一定的时间建构后执行一个函数，只执行一次
+        window.setInterval(add,5)//循环执行
+
+        //history对象
+        window.history.back();
+        window.history.forward();//打开下一个网页或者回退上一个网页
+
+        //location对象
+        window.location.href = "http://www.baidu.com";//跳转到某个URL
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+html {
+    height:100%;
+}
+body {
+    z-index: 2;
+    margin:0;
+}
+
+.bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, rgba(255, 255, 255, 0.88) 50%, #7bc7f5 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+
+}
+
+.bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+}
+
+.bg3 {
+    animation-duration:5s;
+}
+
+h1 {
+    font-family:monospace;
+}
+
+@keyframes slide {
+    0% {
+        transform:translateX(-25%);
+    }
+    100% {
+        transform:translateX(25%);
+    }
+}
+@keyframes form_move {
+    from {
+        left: 0;
+    }
+    to {
+    }
+}
+@keyframes form_move_right {
+    from{right: 0;}
+    to{}
+}
+.Main{
+    animation-name: form_move;
+    animation-duration: 2s;
+    background: #7e7ef1;
+    position: fixed;
+    bottom: 30%;
+    left: 5%;
+    width: 500px;
+    height: 400px;
+    border-radius: 25px;
+}
+
+#title{
+    animation-name: form_move;
+    animation-duration: 2s;
+    position:fixed;
+    left: 8%;
+    top: 26%;
+    color: white;
+    font-size: 10mm;
+    font-family:Segoe UI Black ;
+}
+#slogan1{
+    animation-name:form_move;
+    animation-duration: 2s;
+    position: fixed;
+    left:7%;
+    top:36%;
+    font-size: 6mm;
+    font-weight: bold;
+    font-family:Arial ;
+    color: white;
+}
+#slogan2{
+    animation-name:form_move;
+    animation-duration: 2s;
+    position: fixed;
+    left:7%;
+    top:47%;
+    font-size: 6mm;
+    font-weight: bold;
+    font-family:Arial ;
+    color: white;
+}
+#Back{
+    animation-name: form_move;
+    animation-duration: 2s;
+    color: white;
+    width: 250px;
+    height: 40px;
+    position: fixed;
+    top: 61%;
+    left: 12%;
+    background: #7e7ef1;
+    border-radius: 25px;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    font-size: 8mm;
+    font-family: Berlin Sans FB;
+    transition: all 0.3s;
+}
+#Check:hover{
+    transform: scale(1.10);
+}
+
+/*分页按钮*/
+ul.pagination {
+    animation-name: form_move_right;
+    animation-duration: 2s;
+    position: fixed;
+    left: 62%;
+    top: 88%;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+ul.pagination li {display: inline;}
+ul.pagination li a {
+    color: #7171dc;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+ul.pagination li a.active {
+    background-color: #7171dc;
+    color: white;
+}
+ul.pagination li a:hover:not(.active) {background-color: #ddd;}
+ul.pagination li a {
+    border-radius: 5px;
+}
+ul.pagination li a.active {
+    border-radius: 5px;
+}
+/*结果显示*/
+.ResultBox{
+    animation-name: form_move_right;
+    animation-duration: 2s;
+    background: #7e7ef1;
+    position: fixed;
+    bottom: 18%;
+    right: 10%;
+    width: 800px;
+    height: 600px;
+    border-radius: 25px;
+}
+#goodsTable{
+    position:relative;
+    left: 5%;
+    top: 5%;
+    width: 90%;
+    color: white;
+}
+td {
+    top:8%;
+    padding: 10px;
+    text-align: center;
+    font-size: 5mm;
+}
+th{
+    font-size: 8mm;
+}
+#total{
+    animation-name: form_move_right;
+    animation-duration: 2s;
+    position: fixed;
+    font-size: 6mm;
+    font-family: Arial;
+    right: 42%;
+    top:76%;
+    color:white;
+}

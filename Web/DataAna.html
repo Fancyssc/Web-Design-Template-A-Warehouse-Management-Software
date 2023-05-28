@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Analysis</title>
+    <script src="echarts.min.js"></script>
+    <link href="css/DataAna.css" rel="stylesheet">
+</head>
+<body>
+
+<!--    背景-->
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div class="Main"> </div>
+
+<!--容器-->
+    <div id="container1" ></div>
+    <div id="container2" ></div>
+    <div id="container3"></div>
+
+<!--标语-->
+    <div id="Main"> </div>
+    <div id="title">Realtime Warehouse Data</div>
+    <div id="txt">
+        Welcome! Here is realtime database surveillance<br>system. Click "Check" to get result.<br><br>
+        If the parameters below are empty, the default display <br>
+        is all data in the database.<br>        <br>
+        The graph will continuously update as time flies.<br><br>
+        You may put your mouse on some graph to get <br>
+        specific information.
+
+    </div>
+<form>
+    <span id="txt1">time:</span>
+    <input type="text"  id="time1" > <br>
+    <input type="text"  id="time2" > <br>
+    <span id="line">-</span>
+    <input type="button" value="Check"  id="Check">
+</form>
+
+    <script src="jquery.js"></script>
+    <script src="JS/DataAna.js"></script>
+</body>
+</html>

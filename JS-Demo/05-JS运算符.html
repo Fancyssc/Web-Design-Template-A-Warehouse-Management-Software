@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <script>
+        /*
+            JS中的运算符基本和其他语言一致，但是特殊之处是JS有全等运算符===
+            JS中的运算会先进行类型转换，之后才比较值,因此在JS中string和number可以对比
+            如果要使用老版本的比较，也就是不进行类型转换，不同类型的值无法比较的话
+            使用===即可
+         */
+        var age1 = 20;
+        var age2 = "20";
+        document.write(age1==age2+"\n");
+        document.write(age1===age2+"\n");
+
+        /*
+            JS中的类型转换：
+            string --> number : 字符串的字面值转换成数字。 如果字面值不是数字，转换成NaN
+            boolean --> number : true 是 1， false 是 0
+            number ---> boolean : 0和NaN转换成false 其他是true
+            string --> boolean : 空字符串转换成 false 其他true
+            null/undefined --> boolean : false
+
+         */
+        var a = +"A";//加号可以用来做转换
+        var b = parseInt(a);//也可用parse转换
+        document.write(b+"\n");
+    </script>
+</body>
+</html>

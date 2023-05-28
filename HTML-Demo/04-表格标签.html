@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--利用
+        <table> 定义表格   border:边框宽度 width：表格宽度  cellspacing:单元格之间的空白
+        <tr> 定义行  align: 单元表格对齐方式
+        <td> 定义单元格   rowspan：规定单元格横跨的行数    colspan:规定单元格横跨的列数   用于合并单元格
+               合并单元格归属于行序号和列序号较小的一边
+        <th> 定义表头(第一行)单元格
+    -->
+
+    <table border="1" cellspacing="0"> <!-- 组合两个参数实现细线边框-->
+        <tr align="center">
+            <th>序号</th>
+            <th>品牌</th>
+            <th>企业</th>
+        </tr>
+        <tr align="center">
+            <td>010</td>
+            <td>三只松鼠</td>
+            <td>三只松鼠</td>
+        </tr>
+        <tr align="center">
+            <td>020</td>
+            <td>优衣库</td>
+            <td>优衣库</td>
+        </tr>
+        <tr>
+            <td>030</td>
+            <td>小米</td>
+            <td>小米科技有限公司</td>
+        </tr>
+    </table>
+<hr>
+<hr>
+    <table border="1" cellspacing="0"> <!-- 组合两个参数实现细线边框-->
+        <tr align="center">
+            <th>序号</th>
+            <th>品牌</th>
+            <th>企业</th>
+        </tr>
+        <tr align="center">
+            <td>010</td>
+            <td>三只松鼠</td>
+            <td>三只松鼠</td>
+        </tr>
+        <tr align="center">
+            <td rowspan="2">020</td>
+            <td>优衣库</td>
+            <td>优衣库</td>
+        </tr>
+        <tr>
+            <td>小米</td>
+            <td>小米科技有限公司</td>
+        </tr>
+    </table>
+</body>
+</html>

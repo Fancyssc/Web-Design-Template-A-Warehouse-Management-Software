@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <img src="img.png" id="light"> <br>
+    <div class = "cls">我在睡觉</div> <br>
+    <div class = "cls">我很困</div> <br>
+
+    <input type="checkbox" name = "hobby"> 电影
+    <input type="checkbox" name = "hobby"> 睡觉
+    <input type="checkbox" name = "hobby"> 游戏
+    <br>
+    <script>
+        /* 通过DOM对html进行操作 */
+        /* Element元素对象:
+           获取:--> 通过Document对象的方法来获取
+           getElementById: 根据id属性获取，返回一个Element对象
+           getElementsByTagName: 根据标签名称获取，返回Element对象数组
+           getElementsByName： 根据name属性获取，返回Element对象数组
+           getElementsByClassName: 根据class属性值获取，返回Element对象数组
+         */
+
+        //getElementById
+        var image = document.getElementById("light");
+            //alert(image);
+
+        //getElementsByTagName
+        var div = document.getElementsByTagName("div");
+            //alert(div.length)
+
+        //getElementsByName
+        var checkbox = document.getElementsByName("hobby");
+            //alert(checkbox.length)
+
+        //getElementsByClassName
+        var cls = document.getElementsByClassName("cls");
+            //alert(cls.length)
+
+        /*
+            常见的Element对象的使用
+            一般是获取对象之后，查看文档之后采用具体的使用方法
+        */
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+
+    <link href="css/Register.css" rel="stylesheet">
+</head>
+<body>
+    <!--背景-->
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div class="Main"> </div>
+
+    <!--左侧标语-->
+    <div id="slogan">Welcome!</div>
+    <div id="line"></div>
+    <div id="statement">
+        Welcome to our warehouse management system! Register now to be our members.
+        <br><br>
+        We offer the best warehouse management service based on database. Welcome to join us.<br><br>
+        Let us manage with heart together!
+    </div>
+
+    <!--注册表主体-->
+    <form>
+        <!--标题-->
+        <div id="title">Registration</div>
+        <!--username-->
+        <span id="txt1">username</span>
+        <input type="text"  id="username" > <br>
+        <span id="username_err" style="display:none">The length should between 6 and 12.</span>
+        <br>
+        <!--name-->
+        <span id = "txt_name">name</span>
+        <input type="text" id="name"> <br>
+        <br>
+        <!--password-->
+        <span id="txt2">password</span>
+        <input type="password" id="password"> <br>
+        <span id="password_err" style="display: none">The length should between 6 and 12.</span>
+        <br>
+        <!--warehouse ID-->
+        <span id="txt3">warehouse ID(where you work in)</span>
+        <input type="text" id="wareId">
+        <br>
+        <!--gender-->
+        <span id="txt4">gender</span>
+        <input type="radio" name="gender" value="Male" id="Male" >
+        <span id="txt_male" >Male</span>
+        <input type="radio" name="gender" value="Female" id="Female">
+        <span id="txt_female">Female</span>
+        <br>
+        <!--注册最终按钮-->
+        <input type="button" value="Register"  id="Register">
+        <script src="jquery.js"></script>
+        <script src="JS/Register.js"></script>
+    </form>
+
+
+</body>
+</html>
