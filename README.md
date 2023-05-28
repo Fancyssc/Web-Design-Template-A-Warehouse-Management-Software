@@ -2,9 +2,9 @@
 The web design coding implementing login, register and portfolio etc. functions. BUPT Web&amp;Design 2022
 
 ## Dependencies
-echarts.min.js is needed.
+_echarts.min.js_ is needed.
 
-jquery.js is needed.
+_jquery.js_ is needed.
 
-MySQL environment and corresponding database are needed. Other wise only UI could be viewed and no logic interactions can be implemented.
+_MySQL_ environment and corresponding database are needed. Other wise only UI could be viewed and no logic interactions can be implemented.
 
